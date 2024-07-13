@@ -1,0 +1,193 @@
+html {
+    background: linear-gradient(90deg, #845EC2, #B0A8B9);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    padding: 0 15%;
+}
+
+.heading-image {
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 22px;
+    max-width: 100%;
+}
+
+.nav-tab {
+    border: 2px solid black;
+    width: 140px;
+    height: 80px;
+    font-family: "Playwrite GB S", cursive;
+    font-size: 26px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 20px;
+    color: #d4e7f9;
+    position: relative;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+    }
+
+    .home-tab {
+        background: radial-gradient(ellipse at center, #00C0A3, #00896F);
+        
+    }
+    .homework-tab {
+        background: radial-gradient(ellipse at center, #00C0A3, #00896F);
+        
+    }
+    .resources-tab {
+        background: radial-gradient(ellipse at center, #00C0A3, #00896F);
+        
+    }
+    .worksheet-tab {
+        background: radial-gradient(ellipse at center, #00C0A3, #00896F);
+        
+    }
+    .posts-tab {
+        background: radial-gradient(ellipse at center, #00C0A3, #00896F);
+        
+    }
+
+    .active {
+        /* Styles for the element */
+        background-color: #333;
+
+        /* Neon glow effect */
+        box-shadow: 0 0 10px #4B4453;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .active:hover {
+        box-shadow: 0 0 10px #4B4453, 0 0 20px #845EC2;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        background-color: #B0A8B9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+
+    /* :hover {
+        display: block;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    } */
+
+    .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.nav-tab:hover .dropdown-content {
+  display: block;
+}
+
+.fade-box {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fade-box::before,
+  .fade-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px; /* Adjust the width of the fade effect */
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through the gradient */
+  }
+  
+  .fade-box::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+  
+  .fade-box::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+
+  .main-body {
+    border: 6px solid #333;
+    border-radius: 10px;
+    background-color: #b0a8b9be;
+    width: 65%;
+    padding: 30px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-div {
+    max-width: 100%;
+    display: flex;
+    height: fit-content;
+  }
+
+  .img-home {
+    max-width: 40%;
+    border-radius: 4px;
+  }
+  .img-1 {
+    margin: 40px;
+    padding: 20px;
+    background-color: #00c0a321;
+  }
+
+  .class-rules {
+    background: radial-gradient(ellipse at top right, #845ec2c1, #ffffffc6);
+    border: 3px solid rgba(63, 63, 63, 0.912);
+    border-radius: 10px;
+    margin: 20px 0 0 30px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+
+  .class-rules-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: fit-content;
+  }
