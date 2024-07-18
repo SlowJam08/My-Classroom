@@ -23,13 +23,14 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    width: 100%;
     padding: 0 15%;
 }
 
 .heading-image {
-    max-width: 100%;
-    width: 100%;
-    height: 400px;
+    max-width: 1200px;
+    width: 80%;
+    height: auto;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -37,59 +38,64 @@ body {
 .nav-bar {
     display: flex;
     gap: 22px;
-    max-width: 100%;
+    max-width: 1200px;
+    width: 80%;
+    justify-content: space-between;
 }
 
 .nav-tab {
-    border: 2px solid black;
-    width: 140px;
-    height: 80px;
+    border: 1px solid black;
+    width: 190px;
+    height: 70px;
     font-family: "Playwrite GB S", cursive;
     font-size: 26px;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-    border-radius: 20px;
+    border-radius: 40%;
     color: #d4e7f9;
     position: relative;
+    background-color: #aa3ccb;
+    align-content: center;
+    box-shadow: 3px 3px 3px 3px #9e21aa;
     }
 
     a:link, a:visited, a:hover, a:active {
         text-decoration: none;
     }
-
+/*
     .home-tab {
-        background: radial-gradient(ellipse at center, #FF8066, #C34A36);
+        background: #C34A36;
         
     }
     .homework-tab {
-        background: radial-gradient(ellipse at center, #FF8066, #C34A36);
+        background: #C34A36;
         
     }
     .resources-tab {
-        background: radial-gradient(ellipse at center, #FF8066, #C34A36);
+        background: #C34A36;
         
     }
     .worksheet-tab {
-        background: radial-gradient(ellipse at center, #FF8066, #C34A36);
+        background: #C34A36;
         
     }
     .posts-tab {
-        background: radial-gradient(ellipse at center, #FF8066, #C34A36);
+        background: #C34A36;
         
     }
+*/  
 
     .active {
         /* Styles for the element */
         background-color: #333;
-
-        /* Neon glow effect */
-        box-shadow: 0 0 10px #4B4453;
+        
+        box-shadow: 3px 3px 3px 3px #9e21aa;
         transition: box-shadow 0.3s ease-in-out;
     }
 
     .active:hover {
-        box-shadow: 0 0 10px #4B4453, 0 0 20px #845EC2;
+        box-shadow: 0 0 10px #4B4453, 3px 3px 20px 3px #9e21aa;
     }
 
     .dropdown-content {
@@ -311,7 +317,7 @@ body {
 .back-image-eng1{
     position: absolute;
     z-index: -1;
-    top: 1200px;
+    top: 1500px;
     right: 30%;
     max-width: 40%;
     height: auto;
@@ -329,7 +335,7 @@ body {
 .back-image-eng2 {
   position: absolute;
     z-index: -1;
-    top: 2100px;
+    top: 2200px;
     right: 20%;
     max-width: 40%;
     height: auto;
