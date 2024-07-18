@@ -10,111 +10,6 @@
     <link rel="stylesheet" href="../../style.css">
     <style>
 
-        .main {
-            width: 100%;
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            width: 75%;
-            margin: 50px;
-        }
-
-        .unit {
-            display: flex;
-            margin-bottom: 20px;
-            gap: 20px;
-        }
-
-        .checkbox {
-            display: none;
-            background-color: linear-gradient();
-        }
-
-        .heading-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid black;
-            width: 150px;
-            height: 100px;
-            cursor: pointer;
-            margin: 0;
-            border-radius: 40%;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
-            background-color: #4b445386;
-        }
-
-        .page {
-            width: 100%;
-            height: fit-content;
-            padding: 1.5rem;
-            background-color: #ffffff29;
-            backdrop-filter: blur(20px);
-            background-image: linear-gradient(120deg, #ffffff2f, #e260fc4a);
-            border-radius: 0 9px 20px 20px;
-            display: none;
-            gap: 20px;
-        }
-
-        .checkbox:checked ~ .page {
-            display: flex;
-            transition: max-width 0.5s ease-in;
-        }
-
-        .unit-content {
-            flex: 1;
-            border: 1px solid black;
-            padding: 20px;
-            border-radius: 20px;
-            background-color: #b0a8b999;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .back-image-eng {
-            position: absolute;
-            z-index: -1;
-            top: 700px;
-            right: 10%;
-            max-width: 40%;
-            height: auto;
-            border-radius: 30%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .back-image-eng img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 30%;
-            filter: blur(2px);
-        }
-
-        .back-image-eng1{
-            position: absolute;
-            z-index: -1;
-            top: 1200px;
-            right: 30%;
-            max-width: 40%;
-            height: auto;
-            border-radius: 30%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .back-image-eng1 img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 30%;
-            filter: blur(2px);
-        }
-
-
     </style>
 </head>
 <body>
@@ -142,7 +37,7 @@
         </div>
     </div>
     <div class="main">
-        <div class="heading-home">Various Resources for Units</div>
+        <div>Various Resources for Units</div>
         <div class="back-image-eng"><img src="../../Images/student pic.jpg" alt="cartoon backpack">
         </div>
         <div class="back-image-eng1">
@@ -151,7 +46,7 @@
      <div class="container">
         <div class="unit unit1">
             <input type="checkbox" id="unit1-checkbox" class="checkbox">
-            <label for="unit1-checkbox" class="heading-box">1 Unit <span>Talking about people</span></label>
+            <label for="unit1-checkbox" class="heading-box">Unit 1<span>Talking about people</span></label>
             <div class="page">
                 <div class="unit-content">
                     <h4>Vocabulary</h4>
@@ -182,7 +77,7 @@
         </div>
         <div class="unit unit2">
             <input type="checkbox" id="unit2-checkbox" class="checkbox">
-            <label for="unit2-checkbox" class="heading-box">Unit 2</label>
+            <label for="unit2-checkbox" class="heading-box">Unit 2 <span>Food and health</span></label>
             <div class="page">
                 <div class="unit2-content">
                     <a href="#">some stuff to go</a>
@@ -191,7 +86,7 @@
         </div>
         <div class="unit unit3">
             <input type="checkbox" id="unit3-checkbox" class="checkbox">
-            <label for="unit3-checkbox" class="heading-box">Unit3</label>
+            <label for="unit3-checkbox" class="heading-box">Unit 3 <span>Places</span></label>
             <div class="page">
                 <div class="unit3-content">
                     <a href="#">some stuff to go</a>
@@ -200,7 +95,7 @@
         </div>
         <div class="unit unit4">
             <input type="checkbox" id="unit4-checkbox" class="checkbox">
-            <label for="unit4-checkbox" class="heading-box">1 Unit 4</label>
+            <label for="unit4-checkbox" class="heading-box">Unit 4 <span>Special Occasions</span></label>
             <div class="page">
                 <div class="unit4-content">
                     <a href="#">some stuff to go</a>
@@ -209,7 +104,7 @@
         </div>
         <div class="unit unit5">
             <input type="checkbox" id="unit5-checkbox" class="checkbox">
-            <label for="unit5-checkbox" class="heading-box">1 Unit5</label>
+            <label for="unit5-checkbox" class="heading-box">Unit 5 <span>Our Brains</span></label>
             <div class="page">
                 <div class="unit5-content">
                     <a href="#">some stuff to go</a>
@@ -218,7 +113,7 @@
         </div>
         <div class="unit unit6">
             <input type="checkbox" id="unit6-checkbox" class="checkbox">
-            <label for="unit6-checkbox" class="heading-box">1 Uni6</label>
+            <label for="unit6-checkbox" class="heading-box">Unit 6 <span>Great Stories</span></label>
             <div class="page">
                 <div class="unit6-content">
                     <a href="#">some stuff to go</a>
@@ -227,7 +122,7 @@
         </div>
         <div class="unit unit7">
             <input type="checkbox" id="unit7-checkbox" class="checkbox">
-            <label for="unit7-checkbox" class="heading-box">1 Uni7</label>
+            <label for="unit7-checkbox" class="heading-box">Unit 7 <span>Ancient Rome and Egypt</span></label>
             <div class="page">
                 <div class="unit7-content">
                     <a href="#">some stuff to go</a>
@@ -236,7 +131,7 @@
         </div>
         <div class="unit unit8">
             <input type="checkbox" id="unit8-checkbox" class="checkbox">
-            <label for="unit8-checkbox" class="heading-box">1 Unit8</label>
+            <label for="unit8-checkbox" class="heading-box">Unit 8 <span>Rainforests</span></label>
             <div class="page">
                 <div class="unit8-content">
                     <a href="#">some stuff to go</a>
@@ -245,78 +140,15 @@
         </div>
         <div class="unit unit9">
             <input type="checkbox" id="unit9-checkbox" class="checkbox">
-            <label for="unit9-checkbox" class="heading-box">1 Unit9</label>
+            <label for="unit9-checkbox" class="heading-box">Unit 9 <span>Animal Kingdom</span></label>
             <div class="page">
                 <div class="unit9-content">
                     <a href="#">some stuff to go</a>
                 </div>
             </div>
         </div>
-        <div class="unit unit10">
-            <input type="checkbox" id="unit10-checkbox" class="checkbox">
-            <label for="unit10-checkbox" class="heading-box">1 Unit10</label>
-            <div class="page">
-                <div class="unit10-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
-        </div>
-        <div class="unit unit11">
-            <input type="checkbox" id="unit11-checkbox" class="checkbox">
-            <label for="unit11-checkbox" class="heading-box">1 Unit11</label>
-            <div class="page">
-                <div class="unit11-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
-        </div>
-        <div class="unit unit12">
-            <input type="checkbox" id="unit12-checkbox" class="checkbox">
-            <label for="unit12-checkbox" class="heading-box">1 Unit12</label>
-            <div class="page">
-                <div class="unit12-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
-        </div>
-        <div class="unit unit13">
-            <input type="checkbox" id="unit13-checkbox" class="checkbox">
-            <label for="unit13-checkbox" class="heading-box">1 Unit13</label>
-            <div class="page">
-                <div class="unit13-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
-        </div>
-        <div class="unit unit14">
-            <input type="checkbox" id="unit14-checkbox" class="checkbox">
-            <label for="unit14-checkbox" class="heading-box">1 Unit14</label>
-            <div class="page">
-                <div class="unit14-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
-        </div>
-        <div class="unit unit15">
-            <input type="checkbox" id="unit15-checkbox" class="checkbox">
-            <label for="unit15-checkbox" class="heading-box">1 Uni15t</label>
-            <div class="page">
-                <div class="unit15-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="unit unit16">
-            <input type="checkbox" id="unit16-checkbox" class="checkbox">
-            <label for="unit16-checkbox" class="heading-box">1 Unit16</label>
-            <div class="page">
-                <div class="unit16-content">
-                    <a href="#">some stuff to go</a>
-                </div>
-            </div>
         </div>
-            </div>
     </div>
     <div class="footer"></div>
     

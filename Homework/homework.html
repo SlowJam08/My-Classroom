@@ -8,6 +8,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <style>
+        .homework {
+            border: 6px solid #333;
+            border-radius: 10px;
+            width: 70%;
+            padding: 30px;
+            min-height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .homework-day {
+            border: 2px solid black;
+            width: 90%;
+            height: 200px;
+        }
+
+        .row {
+            display: flex;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .row-1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+    </style>
 </head>
 <body>
     <div class="header">
@@ -33,11 +70,27 @@
             <a href="/Posts/posts.html"><div class="nav-tab posts-tab"><span>Today's Posts</span></div></a>
         </div>
     </div>
-    <div class="main-body">
-        <div class="heading-home"></div>
-        <div>Albert einstein quote, decide which one but one about imagination is good</div>
-        <div>mathematics is not about numbers,equations, computations or algorithms, it is about understanding..quote</div>
-        <div>be who you are and say what you feel because those who mind dont matter, and those who matter dont mind</div>
+    <div class="homework">
+        <div class="homework-day">
+            <div class="row row-1">
+                <div>Subject</div>
+                <div>Date Given</div>
+                <div>Due Date</div>
+                <div>Title</div>
+                <div>Scope of Work</div>
+                <div>Downloadable File</div>
+            </div>
+            <div class="row row-2">
+                <div>English/ Math/ Science</div>
+                <div>7/07</div>
+                <div>21/07</div>
+                <div>Title(Present Simple)</div>
+                <div>Explain Homework, instructions on what to do</div>
+                <div>Downloadable File (yes/no)</div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
     </div>
     <div class="footer"></div>
 </body>
