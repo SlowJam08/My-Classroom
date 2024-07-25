@@ -16,6 +16,7 @@ body {
     align-items: center;
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .header {
@@ -24,11 +25,9 @@ body {
     align-items: center;
     max-width: 100%;
     width: 100%;
-    padding: 0 15%;
 }
 
 .heading-image {
-    max-width: 1200px;
     width: 80%;
     height: auto;
     margin-bottom: 20px;
@@ -38,9 +37,9 @@ body {
 .nav-bar {
     display: flex;
     gap: 22px;
-    max-width: 1200px;
     width: 80%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-tab {
@@ -88,7 +87,7 @@ body {
 
     .active {
         /* Styles for the element */
-        background-color: #333;
+        background-color: #621a78;
         
         box-shadow: 3px 3px 3px 3px #9e21aa;
         transition: box-shadow 0.3s ease-in-out;
@@ -159,7 +158,7 @@ body {
   }
 
   .main-body {
-    border: 6px solid #333;
+    border: 1px solid #525252f4;
     border-radius: 10px;
     width: 65%;
     padding: 30px;
@@ -167,34 +166,70 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 50px;
+    gap: 20px;
   }
 
-  .img-div {
-    max-width: 100%;
+  .home-div {
+    width: 100%;
+    height: fit-content;
     display: flex;
-    height: auto;
+  }
+
+  .img-1 {
+    justify-content: space-between;
+  }
+
+  .img-1 h5 {
+    font-size: 45px;
+    margin: 10px 5px 40px 5px;
+    text-decoration: underline;
+  }
+
+  .img-1 h6 {
+    font-size: 25px;
+    margin: 5px;
   }
 
   .img-home {
-    max-width: 40%;
-    border-radius: 4px;
+    width: 40%;
+    padding: 0 30px;
+    background-color: #ffffff38;
+    border-radius: 5px;
   }
-  .img-1 {
-    margin: 40px;
-    padding: 20px;
+
+  .img-home ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-home li {
+    margin: 10px 0;
+  }
+
+  .img-home li a {
+    color: #cd2fe6;
+  }
+
+  .img-home li a:hover {
+    color: #b646c0;
   }
 
   .class-rules {
-    background: radial-gradient(ellipse at top right, #a689d5e8, #fffffff3);
+    background: radial-gradient(ellipse at top right, #a689d5a1, #ffffffb8);
     border: 3px solid rgba(63, 63, 63, 0.912);
     border-radius: 10px;
-    margin: 20px 0 0 30px;
     width: 78%;
     height: 80%;
     padding: 40px;
-    font-size: larger;
+    font-size: 23px;
     box-shadow: 7px 7px 5px rgb(57, 41, 25);
+    margin-top: 20px;
+    transition-duration: 200ms;
+  }
+
+  .class-rules:hover {
+    width: 83%;
   }
 
   .attributes {
@@ -210,8 +245,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: auto;
+    width: 50%;
+    height: fit-content;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .class-rules-box img {
+    margin: 70px 0;
+    padding: 20px 0;
   }
 
   .class-rules span, .attributes span {
@@ -228,7 +270,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ff806653;
+    background-color: #fa8f7941;
     border-radius: 4px;
 }
 
@@ -250,19 +292,34 @@ body {
     background-color: linear-gradient();
 }
 
+.homepage-imgquote img{
+  width: 100%;
+}
+
 .heading-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    width: 150px;
+    width: 170px;
     height: 100px;
     cursor: pointer;
     margin: 0;
+    padding: 5px;
     border-radius: 40%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
-    background-color: #4b445386;
+    background-color: #a940dd86;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.heading-box span {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 4px;
 }
 
 .page {
@@ -299,7 +356,7 @@ body {
 .back-image-eng {
     position: absolute;
     z-index: -1;
-    top: 700px;
+    top: 80%;
     right: 10%;
     max-width: 40%;
     height: auto;
@@ -311,13 +368,12 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 30%;
-    filter: blur(2px);
 }
 
 .back-image-eng1{
     position: absolute;
     z-index: -1;
-    top: 1500px;
+    top: 140%;
     right: 30%;
     max-width: 40%;
     height: auto;
@@ -329,13 +385,12 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 30%;
-    filter: blur(5px);
 }
 
 .back-image-eng2 {
   position: absolute;
     z-index: -1;
-    top: 2200px;
+    top: 240%;
     right: 20%;
     max-width: 40%;
     height: auto;
@@ -347,7 +402,6 @@ body {
   max-width: 100%;
     height: auto;
     border-radius: 5px;
-    filter: blur(2px);
 }
 
 .main > :first-child {

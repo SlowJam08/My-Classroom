@@ -11,9 +11,13 @@
 
     <style>
         .main-body {
-        background-image: url(./Images/Bullitin.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
+        background-color: rgba(240, 248, 255, 0.344);
+        }
+
+        .heading-home {
+            font-size: 52px;
+            font-weight: 700;
+            text-decoration: underline;
         }
 
 #side-star-left {
@@ -24,18 +28,29 @@
 }
 
 .auto-rotate {
-    animation: autoRotateAnimation;
-    scroll-behavior: smooth;
-    animation-timeline: view();
+    animation: autoRotateAnimation 2s linear infinite; /* Add duration, timing function, iteration count */;
 }
 @keyframes autoRotateAnimation {
     from{
-        tranform: rotate(0deg)
+        tranform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
     
+}
+
+.homepage-imgquote {
+    background-color: #76757528;
+    width: 60%;
+}
+
+.class-rules-box img {
+    width: 100%;
+    height: auto;
+    padding: 80px 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
 }
 
     </style>
@@ -66,9 +81,28 @@
     </div>
     <img id="side-star-left" class="auto-rotate" src="./Images/star.png" alt="drawn star">
     <div class="main-body">
-        <div class="heading-home"></div>
-        <div class="img-div img-1">
-            <img class="img-home" src="./Images/Imagination quote.png" alt="">
+        <div class="heading-home">Home Page</div>
+        <div class="home-div img-1">
+            <div class="img-home">
+                <h5>Fun learning games</h5>
+                <h6>English</h6>
+                <ul>
+                    <li><a target="_blank" href="https://www.prodigygame.com/main-en/">Prodigy</a> Math and English games (solo or Group)</li>
+                    <li><a target="_blank" href="https://www.abcya.com/">ABCya</a> Various games for all levels</li>
+                    <li><a target="_blank" href="https://www.turtlediary.com/">TurtleDiary</a> Free games, quizzes, videos and worksheets for all ages</li>
+                    <li><a target="_blank" href="https://www.education.com/games/">Education.com</a> Free games, worksheets, activities and more</li>
+                    <li><a target="_blank" href="https://www.splashlearn.com/games">SplashLearn</a> Educational games for kids</li>
+                    <li><a target="_blank" href="https://pbskids.org/games">PBSkids</a> Educational games for kids</li>
+                    <li><a target="_blank" href="https://www.getepic.com/">Epic!</a> Online book library</li>
+                    <li><a target="_blank" href="https://www.roomrecess.com/">RecessRoom</a> Educational games for kids</li>
+                    <li><a target="_blank" href="https://musiclab.chromeexperiments.com/Experiments">Chrome Music Lab</a> Multiple music lab experiments/activities to understand sound</li>
+                    <li><a target="_blank" href="https://toytheater.com/">ToyTheater</a> Educational games and more for kids</li>
+                    <li><a target="_blank" href="https://www.starfall.com/h/index.php">Starfall</a> English and Math games for kids</li>
+                    <li><a target="_blank" href="https://99math.com/">99math</a> Solo or group Math games (requires phones)</li>
+                    <li><a target="_blank" href="https://sdzwildlifeexplorers.org/">San Diego Zoo</a> Learn more about animals, play games and watch live videos of the animals</li>
+                    <li><a href="https://jr.brainpop.com/">BrainPopJr</a> Multiple educational games</li>
+                </ul>
+            </div>
             <div class="class-rules-box">
              <div class="class-rules">
                 <span>Our Class Rules</span>
@@ -77,19 +111,22 @@
                 <p>Eyes forward</p>
                 <p>Respect others! (teachers, TA's, friends and students)</p>
              </div>
+             <img src="./Images/Tender Love Quote on Old Lined Paper Instagram Post.png" alt="quote about Math">
             </div>
         </div>
-        <div class="img-div">
+        <div class="home-div">
             <div class="attributes">
                 <span>NIRA Attributes</span>
                 <p>Independence</p>
-                <p>Persevearance</p>
+                <p>Perseverance</p>
                 <p>Coming Soon</p>
                 <p></p>
             </div>
-            <img class="img-home img-2" src="./Images/Tender Love Quote on Old Lined Paper Instagram Post.png" alt="">
+            <div class="homepage-imgquote">
+                <img src="./Images/Imagination quote.png" alt="">
+            </div>
         </div>
-        <div class="img-div"><img class="img-home img-3" src="./Images/lotr.jpg" alt=""></div>
+        <div class="home-div"></div>
     </div>
     <div class="footer"></div>
 </body>
