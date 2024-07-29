@@ -8,6 +8,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            height: 500px;
+            width: 95%;
+            border: 1px solid black;
+            background-color: #fff;
+            gap: 5px;
+            text-decoration: none !important;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .heading-worksheets {
+            grid-column: span 6;
+            text-align: center;
+            font-size: 3rem;
+            text-decoration: underline;
+            background-color: #c41cde;
+        }
+
+        .w-eng {
+            grid-column: span 2;
+            border-right: 2px solid black;
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: underline;
+            background-color: #d157e3;
+        }
+
+        .w-math {
+            grid-column: span 2;
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: underline;
+            background-color: #d157e3;
+        }
+
+        .w-sci {
+            grid-column: span 2;
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: underline;
+            background-color: #d157e3;
+        }
+
+        .font-size {
+            font-size: 1.3rem;
+        }
+
+        .one {
+            background-color: #e38cf1;
+        }
+
+        .two {
+            background-color: #e059f2;
+        }
+
+        .font-size > a {
+            color: aliceblue;
+        }
+
+        .font-size > a:visited {
+            color: aliceblue;
+        }
+
+        .font-size > a:hover {
+            color: antiquewhite;
+        }
+
+    </style>
 </head>
 <body>
     <div class="header">
@@ -21,20 +99,43 @@
                     <a href="../Resources/Math/resources-math.html">Math</a>
                     <a href="../Resources/Science/resources-science.html">Science</a>
                 </div>
-            </div></a>
-            <div class="nav-tab active worksheet-tab"><span>Worksheets</span>
-                <a href="../Worksheets/worksheet.html"></a>
-                <div class="dropdown-content hidden fade-box">
-                    <a href="../Resources/English/resources-english.html">English</a>
-                    <a href="../Resources/Math/resources-math.html">Math</a>
-                    <a href="../Resources/Science/resources-science.html">Science</a>
-                </div>
             </div>
+            <a href="../Worksheets/worksheet.html"><div class="nav-tab worksheet-tab"><span>Worksheet</span></div></a>
             <a href="../Posts/posts.html"><div class="nav-tab posts-tab"><span>Today's Posts</span></div></a>
         </div>
     </div>
     <div class="main">
-        <div class="heading-home"></div>
+        <div class="grid">
+            <div class="heading-worksheets centered">Worksheets</div>
+            <div class="item w-eng centered">English</div>
+            <div class="item w-math centered">Math</div>
+            <div class="item w-sci centered">Science</div>
+            <div style="flex-direction: column;" class="item one font-size centered">Letter Formation <a target="_blank" href="./items/Letter Formation Alphabet.pdf">Click here</a></div>
+            <div style="flex-direction: column;" class="item two font-size centered">Preposition Worksheet <a target="_blank" href="../Resources/English/Unit 1/Prepositions worksheet.pdf" >Click here</a></div>
+            <div style="flex-direction: column;" class="item one font-size centered">Decimal Numbers Riddles Activties <a target="_blank" href="./items/Decimal riddles activity sheet.pdf">Click here</a></div>
+            <div style="flex-direction: column;" class="item two font-size centered">Decimal Numbers Riddles Answers <a href="./items/Decimal Number Riddles - Answer Sheet.pdf">Click here</a></div>
+            <div style="flex-direction: column;" class="item one font-size centered">Label the Flower <a href="./items/parts of a flower.pdf">Click here</a></div>
+            <div style="flex-direction: column;" class="item two font-size centered">Parts of a Flower Crossword <a href=""></a></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+            <div style="flex-direction: column;" class="item one font-size centered"></div>
+            <div style="flex-direction: column;" class="item two font-size centered"></div>
+        </div>
     </div>
     <div class="footer"></div>
 </body>
