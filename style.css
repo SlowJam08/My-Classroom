@@ -18,6 +18,19 @@ body {
     height: auto;
 }
 
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #aa3ccb;
+  border-radius: 10px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -71,7 +84,7 @@ body {
     background-color: #aa3ccb;
     align-content: center;
     box-shadow: 3px 3px 3px 3px #9e21aa;
-    transition: 200ms color, 200ms background-color
+    transition: 800ms color, 800ms background-color
     }
 
     .nav-tab:hover {
@@ -147,11 +160,13 @@ body {
         background-color: #621a78;
         
         box-shadow: 3px 3px 3px 3px #9e21aa;
-        transition: box-shadow 0.3s ease-in-out;
+        transition: all 800ms ease-in-out;
     }
 
     .active:hover {
         box-shadow: 0 0 10px #4B4453, 3px 3px 20px 3px #9e21aa;
+        color: #621a78;
+        background-color: #d4e7f9;
     }
 
     .dropdown-content {
@@ -280,7 +295,9 @@ body {
   }
 
   .class-rules {
-    background: radial-gradient(ellipse at top right, #a689d5a1, #ffffffb8);
+    background: url(./Images/classrules\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 3px solid rgba(63, 63, 63, 0.912);
     border-radius: 10px;
     width: 78%;
@@ -289,7 +306,7 @@ body {
     font-size: 23px;
     box-shadow: 7px 7px 5px rgb(57, 41, 25);
     margin-top: 20px;
-    transition-duration: 200ms;
+    transition: scale 200ms;
     display: flex;
     flex-direction: column;
   }
@@ -347,7 +364,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fa79f641;
+    background: url(./Images/TRY\ YOUR\ BEST.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -363,6 +383,20 @@ body {
     display: flex;
     margin-bottom: 20px;
     gap: 20px;
+}
+
+.unit:hover {
+    animation: twitch 400ms;
+}
+
+@keyframes twitch {
+  0%, 100% {
+  transform: rotateZ(0deg);
+  }
+
+  50% {
+  transform: rotateZ(3deg);
+  }
 }
 
 .checkbox {
@@ -387,7 +421,7 @@ body {
     padding: 5px;
     border-radius: 40%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
-    background-color: #a940dd86;
+    background-color: #b360ddf8;
     font-size: 25px;
     font-weight: 600;
     text-decoration: underline;
@@ -405,11 +439,15 @@ body {
     height: fit-content;
     padding: 1.5rem;
     background-color: #ffffff29;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     background-image: linear-gradient(120deg, #ffffff2f, #e260fc4a);
     border-radius: 0 9px 20px 20px;
     display: none;
     gap: 20px;
+}
+
+.page a {
+  color: #0f0f0f;
 }
 
 .checkbox:checked ~ .page {
@@ -439,55 +477,18 @@ body {
     transition: 200ms;
 }
 
-.back-image-eng {
-    position: absolute;
-    z-index: -1;
-    top: 80%;
-    right: 10%;
-    max-width: 40%;
-    height: auto;
-    border-radius: 30%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+.unit-content a {
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
-.back-image-eng img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30%;
+.unit-content:hover {
+scale: 1.2;
+flex: 2;
 }
 
-.back-image-eng1{
-    position: absolute;
-    z-index: -1;
-    top: 140%;
-    right: 30%;
-    max-width: 40%;
-    height: auto;
-    border-radius: 30%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.back-image-eng1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30%;
-}
-
-.back-image-eng2 {
-  position: absolute;
-    z-index: -1;
-    top: 240%;
-    right: 20%;
-    max-width: 40%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.back-image-eng2 img {
-  max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.page a:hover {
+  color: #9e21aa;
 }
 
 .main > :first-child {
@@ -499,13 +500,5 @@ h4 {
     font-size: 1.5rem;
 }
 
-.unit-content a {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
 
-.unit-content:hover {
-  scale: 1.2;
-  flex: 2;
-}
 
