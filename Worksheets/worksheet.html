@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyClass</title>
+    <link rel="icon" type="icon/x-icon" href="../Images/book.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
@@ -19,6 +20,21 @@
             background-color: #fff;
             gap: 5px;
             text-decoration: none !important;
+            
+        }
+
+        .twitch {
+            animation: twitch 400ms;
+        }
+
+        @keyframes twitch {
+            0%, 100% {
+            transform: rotateZ(0deg);
+            }
+
+            50% {
+            transform: rotateZ(3deg);
+            }
         }
 
         .centered {
@@ -34,6 +50,7 @@
             font-size: 3rem;
             text-decoration: underline;
             background-color: #c41cde;
+            font-family: "Playwrite GB S", cursive;
         }
 
         .w-eng {
@@ -59,6 +76,15 @@
             text-align: center;
             text-decoration: underline;
             background-color: #d157e3;
+        }
+
+        .item {
+            transition: background-color 400ms, color 400ms;
+        }
+
+        .item:hover {
+            background-color: #771486;
+            color: #fff;
         }
 
         .font-size {
@@ -104,7 +130,7 @@
             <a href="../Posts/posts.html"><div class="nav-tab posts-tab"><span>Today's Posts</span></div></a>
         </div>
     </div>
-    <div class="main">
+    <div class="main twitch">
         <div class="grid">
             <div class="heading-worksheets centered">Worksheets</div>
             <div class="item w-eng centered">English</div>
