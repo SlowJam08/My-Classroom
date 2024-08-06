@@ -18,6 +18,7 @@
             display: flex;
             flex-direction: column;
             background-image: url(../Images/notice\ board.avif);
+            box-shadow: 8px 15px 8px 5px rgba(0, 0, 0, 0.466);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -36,7 +37,7 @@
 
         .post-info-snippet {
             background-color: #f5f4d129;
-            height: fit-content;
+            height: auto;
             width: 93%;
             display: flex;
             flex-direction: column;
@@ -50,6 +51,25 @@
         .post-info-snippet div {
             display: flex;
             justify-content: space-around;
+            padding-left: 25%;
+            gap: 70px;
+            height: auto;
+        }
+
+        .post-info-snippet p {
+            font-size: 1.2rem;
+            min-width: 40%;
+            height: auto;
+        }
+
+        .post-info-snippet a {
+            color: blueviolet;
+            transition: all 300ms;
+        }
+
+        .post-info-snippet a:hover {
+            color: #68bcf4;
+            text-shadow: 0 0 3px #68bcf4, 0 0 5px #b4d6ed,0 0 7px #d5e5f0;
         }
 
         .divider-posts {
@@ -80,10 +100,10 @@
     <div class="main-posts">
         <div class="heading-home"><p>Daily Post</p></div>
         <div class="post-info-snippet">
-            <h5>Welcome To grade 4</h5>
+            <h5>Welcome to Grade 4</h5>
             <div>
                 <p>Welcome back to the new school year</p>
-                <p>Full Text</p>
+                <p>As our new school year is here i hope everyone is excited to be entering Grade 4. We will nurturing growth in our students through our attributes. Confidence...</p>
             </div>
             <p style="text-align: center; border-top: 1px solid #a4a3a3e2; width: 300px; max-width: 30%; margin: 0 auto; padding: 10px;"><a target="_blank" href="../Images/Colorful Geometric Bom Dia Hello Welcome Poster.png">Click me</a></p>
             <div class="divider-posts"></div>

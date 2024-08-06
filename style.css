@@ -48,10 +48,8 @@ body::-webkit-scrollbar-thumb {
 
 .nav-bar {
     display: flex;
-    gap: 22px;
     width: 80%;
     justify-content: space-between;
-    flex-wrap: wrap;
     transition: 200ms transform, 200ms font-weight;
 }
 
@@ -203,6 +201,10 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
+.nav-tab:focus .dropdown-content {
+  display: block;
+}
+
 .fade-box {
     position: relative;
     overflow: hidden;
@@ -275,6 +277,10 @@ body::-webkit-scrollbar-thumb {
     .img-home {
       width: 80%;
     }
+
+    .dropdown-content {
+      z-index: 2;
+    }
   }
 
   .img-home ul li {
@@ -327,6 +333,11 @@ body::-webkit-scrollbar-thumb {
     border: 10px solid #C34A36;
     padding: 10px;
     font-size: 1.25rem;
+    transition: scale 200ms;
+  }
+
+  .attributes:hover {
+    scale: 1.2;
   }
 
   .class-rules-box {
@@ -342,6 +353,11 @@ body::-webkit-scrollbar-thumb {
   .class-rules-box img {
     margin: 70px 0;
     padding: 20px 0;
+    transition: scale 200ms;
+  }
+
+  .class-rules-box img:hover {
+    scale: 1.2;
   }
 
   .class-rules span, .attributes span {
@@ -354,8 +370,21 @@ body::-webkit-scrollbar-thumb {
 
   @media (max-width: 600px) {
     .class-rules-box {
-      width: 80%;
+      width: 90%;
     }
+  }
+
+  .footer {
+    width: 100%;
+    height: 120px;
+  }
+
+  .footer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 4px;
   }
   
   .main {
@@ -364,7 +393,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(./Images/TRY\ YOUR\ BEST.png);
+    background: url(./Images/TRY\ YOUR\ BEST\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -406,6 +435,11 @@ body::-webkit-scrollbar-thumb {
 
 .homepage-imgquote img{
   width: 100%;
+  transition: scale 200ms;
+}
+
+.homepage-imgquote img:hover {
+  scale: 1.2;
 }
 
 .heading-box {
@@ -438,8 +472,7 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     height: fit-content;
     padding: 1.5rem;
-    background-color: #ffffff29;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     background-image: linear-gradient(120deg, #ffffff2f, #e260fc4a);
     border-radius: 0 9px 20px 20px;
     display: none;
