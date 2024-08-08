@@ -36,7 +36,6 @@
         }
 
         .post-info-snippet {
-            background-color: #f5f4d129;
             height: auto;
             width: 93%;
             display: flex;
@@ -77,6 +76,27 @@
             width: 80%;
             margin-left: 10%;
             border-radius: 4px;
+        }
+
+        @media (max-width: 800px) {
+           .main-posts {
+            background: #ffff;
+            height: auto;
+           }
+
+           .post-info-snippet h5 {
+            font-size: 38px;
+            margin: 50px 50px;
+           }
+
+           .post-info-snippet div {
+            padding-left: 10%;
+            gap: 7px;
+           }
+        }
+
+        @media screen and (max-width: 480px) {
+            
         }
     </style>
 </head>
