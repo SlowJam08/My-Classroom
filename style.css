@@ -536,9 +536,13 @@ body::-webkit-scrollbar-thumb {
     text-decoration: underline;
 }
 
-.heading-box:checked {
-  font-size: smaller;
-  background-color: #fff;
+.checkbox:checked ~ .heading-box > span {
+  font-size: small;
+}
+
+.checkbox:checked ~ .heading-box {
+  font-size: small;
+  background-color: #ce95ebf8;
 }
 
 }
