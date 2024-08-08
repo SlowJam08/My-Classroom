@@ -58,7 +58,13 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
   .nav-bar {
     gap: 20px;
     width: 80%;
@@ -104,9 +110,14 @@ body::-webkit-scrollbar-thumb {
       }
     }
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
+      .nav-tab {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 480px) {
       .main-body {
-        background-color: #ea703c;
         border: none;
       }
 
@@ -199,10 +210,12 @@ body::-webkit-scrollbar-thumb {
 
 .nav-tab:hover .dropdown-content {
   display: block;
+  z-index: 99;
 }
 
 .nav-tab:focus .dropdown-content {
   display: block;
+  z-index: 99;
 }
 
 .fade-box {
@@ -276,6 +289,7 @@ body::-webkit-scrollbar-thumb {
   @media  (max-width: 600px) {
     .img-home {
       width: 80%;
+      padding: 0 5px;
     }
 
     .dropdown-content {
@@ -370,7 +384,16 @@ body::-webkit-scrollbar-thumb {
 
   @media (max-width: 600px) {
     .class-rules-box {
+      width: 95%;
+    }
+
+    .attributes {
       width: 90%;
+    }
+
+    .class-rules-box img {
+      margin: 20px 0;
+      padding: 5px 0;
     }
   }
 
@@ -389,6 +412,7 @@ body::-webkit-scrollbar-thumb {
   
   .main {
     width: 80%;
+    height: auto;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -493,6 +517,30 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
   }
+
+  .main {
+    width: 100%;
+  }
+
+  .heading-box {
+    width: 170px;
+    height: 100px;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    border-radius: 40%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
+    background-color: #b360ddf8;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.heading-box:checked {
+  font-size: smaller;
+  background-color: #fff;
+}
+
 }
 
 .unit span {
