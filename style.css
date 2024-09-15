@@ -7,8 +7,13 @@ html {
 
 :root {
   font-size: 16px;
+  --color-primary: #aa3ccb; /* purple */
+  --color-secondary: #9e21aa; /* darker purple */
+  --color-accent: #d4e7f9; /* bg color:hover */
+  --color-text: #621a78; /* purp active */
+  --color-background: #FFFFFF; /* white */
 }
-
+ 
 body {
     display: flex;
     flex-direction: column;
@@ -27,7 +32,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #aa3ccb;
+  background: var(--color-primary);
   border-radius: 10px;
 }
 
@@ -85,14 +90,14 @@ body::-webkit-scrollbar-thumb {
     border-radius: 40%;
     color: #d4e7f9;
     position: relative;
-    background-color: #aa3ccb;
+    background-color: var(--color-primary);
     align-content: center;
-    box-shadow: 3px 3px 3px 3px #9e21aa;
+    box-shadow: 3px 3px 3px 3px var(--color-secondary);
     transition: 800ms color, 800ms background-color
     }
 
     .nav-tab:hover {
-      color: #aa3ccb;
+      color: var(--color-primary);
       background-color: #d4e7f9;
     }
 
@@ -168,12 +173,12 @@ body::-webkit-scrollbar-thumb {
         /* Styles for the element */
         background-color: #621a78;
         
-        box-shadow: 3px 3px 3px 3px #9e21aa;
+        box-shadow: 3px 3px 3px 3px var(--color-secondary);
         transition: all 800ms ease-in-out;
     }
 
     .active:hover {
-        box-shadow: 0 0 10px #4B4453, 3px 3px 20px 3px #9e21aa;
+        box-shadow: 0 0 10px #4B4453, 3px 3px 20px 3px var(--color-secondary);
         color: #621a78;
         background-color: #d4e7f9;
     }
@@ -270,7 +275,7 @@ body::-webkit-scrollbar-thumb {
   .img-1 h5 {
     font-size: 45px;
     margin: 10px 5px 40px 5px;
-    text-decoration: underline;
+    display: flex;
   }
 
   .img-1 h6 {
@@ -573,7 +578,7 @@ flex: 2;
 }
 
 .page a:hover {
-  color: #9e21aa;
+  color: var(--color-secondary);
 }
 
 .main > :first-child {

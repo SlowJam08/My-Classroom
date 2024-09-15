@@ -186,6 +186,164 @@
             text-shadow: 0 0 20px #fff;
         }
 
+        .footer {
+            display: flex;
+            height: auto;
+            margin: 40px 0 40px 0;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .waveform {
+            display: flex;
+            align-items: flex-end;
+            height: 150px;
+        }
+
+        .bar {
+            width: 10px;
+            height: 30px;
+            margin: 0 5px;
+            background-color: #61dafb;
+            border-radius: 5px;
+            animation: wave 2s infinite ease-in-out alternate;
+        }
+
+        .bar:nth-child(2) {animation-delay: 100ms;}
+        .bar:nth-child(3) {animation-delay: 200ms;}
+        .bar:nth-child(4) {animation-delay: 300ms;}
+        .bar:nth-child(5) {animation-delay: 400ms;}
+        .bar:nth-child(6) {animation-delay: 500ms;}
+        .bar:nth-child(7) {animation-delay: 600ms;}
+        .bar:nth-child(8) {animation-delay: 700ms;}
+        .bar:nth-child(9) {animation-delay: 800ms;}
+        .bar:nth-child(10) {animation-delay: 900ms;}
+        .bar:nth-child(11) {animation-delay: 1000ms;}
+        .bar:nth-child(12) {animation-delay: 1100ms;}
+
+        @keyframes wave {
+            0% { height: 30px; background-color: #61dafb;}
+            50% { height: 100px; background-color: #ff6ec4;}
+            100% { height: 50px; background-color: #3af5c8;}
+        }
+
+        .pl {
+            margin: auto;
+            position: relative;
+            width: 8em;
+            height: 8em;
+            color: #fff;
+        }
+
+        .pl::before, .pl::after {
+            animation: pl-before 2.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            background-color: currentColor;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            width: 25%;
+            height: 25%;
+            transform-origin: 100% 100%;
+        }
+
+
+        .pl::after {
+            animation-name: pl-after;
+        }
+
+        @keyframes pl-before {
+            from {
+                transform: rotate(0) translate(100%, -100%) rotate(-90deg);
+                color: #00ff3c;
+            }
+            20% {
+                transform: rotate(0) translate(-100%, -100%) rotate(90deg);
+            }
+            40% {
+                transform: rotate(0) translate(-300%, -100%) rotate(90deg);
+                color: #ff6a00;
+            }
+            60% {
+                transform: rotate(90deg) translate(-300%,-100%) rotate(-90deg);
+            }
+            80% {
+                transform: rotate(90deg) translate(-100%, -100%) rotate(-90deg);
+                color: #ff00a2;
+            }
+            100% {
+                transform: rotate(90deg) translate(-100%, 100%) rotate(90deg);
+                transform-origin: 100% 100%; /* Added this line */
+            }
+        }
+
+        @keyframes pl-after {
+            0%, 20% {
+                transform: rotate(0) scale(1, 1);
+            }
+            40% {
+                transform: rotate(0) scale(3, 1);
+                color: #00ffcc;
+            }
+            60% {
+                transform: rotate(90deg) scale(3, 1);
+                color: #e100ff;
+            }
+            80% {
+                transform: rotate(90deg) scale(1, 1);
+            }
+            100% {
+                transform: rotate(90deg) scale(1, 1);
+                color: #ddff00;
+            }
+        }
+
+        .shape-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .shape {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 4px solid #00ffcc;
+            animation: expandContract 3s ease-in-out infinite;
+            transform-origin: center;
+            box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+        }
+
+        .shape:nth-child(2) {
+            animation-delay: 0.5s;
+            border-color: #ff00cc;
+            box-shadow: 0 0 15px #ff00cc, 0 0 30px #ff00cc;
+        }
+
+        .shape:nth-child(3) {
+            animation-delay: 01s;
+            border-color: #ccff00;
+            box-shadow: 0 0 15px #ccff00, 0 0 30px #ccff00;
+        }
+
+        .shape:nth-child(4) {
+            animation-delay: 1.5s;
+            border-color: #ffcc00;
+            box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00;
+        }
+
+        @keyframes expandContract {
+            0%, 100% {
+                transform: scale(1)
+            }
+            50% {
+                transform: scale(1.5);
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -238,6 +396,34 @@
             <div style="flex-direction: column;" class="item two font-size centered"></div>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="footer-grid">
+            <div class="pl"></div>
+        </div>
+        <div class="footer-grid">
+            <div class="shape-container">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+        </div>
+        <div class="footer-grid">
+            <div class="waveform">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
